@@ -119,6 +119,8 @@ a:hover { text-decoration: underline; }
   text-align: left;
 }
 .nav-group-title:hover { color: #d1d5db; }
+.nav-label { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
+.nav-icon { flex: none; width: 18px; font-size: 14px; line-height: 1; text-align: center; text-transform: none; letter-spacing: 0; }
 .nav-group-title .chevron {
   width: 16px; height: 16px;
   transition: transform 0.2s;
@@ -396,7 +398,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
   </div>
   <nav>
     <div class="nav-group" data-group="start">
-      <button class="nav-group-title" aria-expanded="true">Start Here</button>
+      <button class="nav-group-title" aria-expanded="true"><span class="nav-label"><span class="nav-icon" aria-hidden="true">📘</span>Start Here</span></button>
       <ul class="nav-links">
         <li><a href="#welcome">Overview &amp; Included Files</a></li>
         <li><a href="#project-structure">Project Structure</a></li>
@@ -408,7 +410,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 1. Admin Panel: Installation -->
     <div class="nav-group" data-group="installation">
       <button class="nav-group-title">
-        Admin Panel: Installation
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">🛠️</span>Admin Panel: Installation</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -432,7 +434,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 2. Admin Panel: Features -->
     <div class="nav-group collapsed" data-group="admin">
       <button class="nav-group-title">
-        Admin Panel: Features
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">🖥️</span>Admin Panel: Features</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -460,7 +462,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 3. Admin Panel: Firebase -->
     <div class="nav-group collapsed" data-group="firebase">
       <button class="nav-group-title">
-        Admin Panel: Firebase
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">🔔</span>Admin Panel: Firebase</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -475,7 +477,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 4. Android App -->
     <div class="nav-group collapsed" data-group="android">
       <button class="nav-group-title">
-        Android App
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">🤖</span>Android App</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -498,7 +500,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 5. iOS App -->
     <div class="nav-group collapsed" data-group="ios">
       <button class="nav-group-title">
-        iOS App
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">📱</span>iOS App</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -518,7 +520,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 6. White-Label -->
     <div class="nav-group collapsed" data-group="whitelabel">
       <button class="nav-group-title">
-        White-Label &amp; Branding
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">🎨</span>White-Label &amp; Branding</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -535,7 +537,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 7. Store & Billing -->
     <div class="nav-group collapsed" data-group="billing">
       <button class="nav-group-title">
-        Store &amp; Billing
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">💳</span>Store &amp; Billing</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -551,7 +553,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 8. Providers -->
     <div class="nav-group collapsed" data-group="providers">
       <button class="nav-group-title">
-        Providers &amp; Integration
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">🔌</span>Providers &amp; Integration</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -570,7 +572,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 9. Upgrade -->
     <div class="nav-group collapsed" data-group="upgrade">
       <button class="nav-group-title">
-        Upgrade Guide
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">⬆️</span>Upgrade Guide</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -587,7 +589,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 10. Changelog -->
     <div class="nav-group collapsed" data-group="changelog">
       <button class="nav-group-title">
-        Changelog
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">📝</span>Changelog</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
@@ -598,7 +600,7 @@ h2[id], h3[id] { scroll-margin-top: 24px; }
     <!-- 11. Credits -->
     <div class="nav-group collapsed" data-group="credits">
       <button class="nav-group-title">
-        Credits
+        <span class="nav-label"><span class="nav-icon" aria-hidden="true">📜</span>Credits</span>
         <svg class="chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </button>
       <ul class="nav-links">
